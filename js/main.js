@@ -16,8 +16,8 @@
  	$("#" + panelId).toggleClass("hidden");
  	var numberOfActivePanels = 4 - $('.hidden').length;
 
- 	$(".panel").width(($(window).width() / numberOfActivePanels) - 25);
-});
+ 	$(".panel").width(($(window).width() / numberOfActivePanels)-60);
+})
 
 
   function updateOutput() {
@@ -32,7 +32,7 @@
 
 
  $(".panel").height($(window).height()-$("#header").height()- 15);
- $(".panel").width(($(window).width()/2)-10);
+ $(".panel").width(($(window).width()/2)-60);
  updateOutput();
  $("textarea").on('change keyup paste', function () {
 
